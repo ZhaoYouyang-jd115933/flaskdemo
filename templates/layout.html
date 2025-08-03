@@ -3,21 +3,32 @@
 <head>
     {% block head %}
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <title>IT@JCU Flask Demo - {% block title %}Flask Demo{% endblock %}</title>
     {% endblock %}
 </head>
 <body>
 <div id="nav">
-    <a href="{{ url_for('home') }}">Home</a> |
-    <a href="{{ url_for('search') }}">Search</a>
+    <ul class="navbar">
+        <li><a href="{{ url_for('home') }}"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="{{ url_for('search') }}"><i class="fas fa-search"></i> Search</a></li>
+        <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About</a></li>
+    </ul>
 </div>
+
 <div id="content">
     {% block content %}{% endblock %}
 </div>
 <div id="footer">
     {% block footer %}
-        <p>IT@JCU Flask Demo by Lindsay Ward - <a href="http://github.com/lindsaymarkward/flaskdemo">Original source on GitHub</a>.</p>
+        <p>
+            IT@JCU Flask Demo by Lindsay Ward —
+            <a href="http://github.com/lindsaymarkward/flaskdemo" target="_blank">
+                Original source on GitHub <i class="fab fa-github"></i>
+            </a>
+        </p>
     {% endblock %}
 </div>
+
 </body>
 </html>

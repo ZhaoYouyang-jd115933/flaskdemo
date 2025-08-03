@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block title %}About This App{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <h1><i class="fas fa-info-circle"></i> About This Flask + Wikipedia App</h1>
+
+    <p>
+        Welcome to the Wikipedia Searcher!
+        This simple web application allows you to search for topics on Wikipedia and view a clean summary of results.
+        It's designed to be beginner-friendly and demonstrate how Flask, templates, and APIs work together.
+    </p>
+
+    <h2><i class="fas fa-star"></i> Features</h2>
+    <ul>
+        <li>Search Wikipedia and display summary results</li>
+        <li>Clean, responsive interface styled with CSS</li>
+        <li>Uses Flask and Jinja2 templating</li>
+        <li>Handles search errors and invalid queries</li>
+    </ul>
+
+    <h2><i class="fas fa-tools"></i> Technologies Used</h2>
+    <ul>
+        <li>Python 3</li>
+        <li>Flask Web Framework</li>
+        <li>Wikipedia API</li>
+        <li>HTML / CSS + Font Awesome</li>
+    </ul>
+
+    <h2><i class="fas fa-user-graduate"></i> About the Developer</h2>
+    <p>
+        This app was developed as part of the IT@JCU Flask training module.  
+        It’s built to show how simple tools can build powerful web apps using open data.
+    </p>
+
+    <p><i class="fab fa-github"></i> <a href="https://github.com/lindsaymarkward/flaskdemo" target="_blank">Original GitHub Source</a></p>
+</div>
+{% endblock %}
